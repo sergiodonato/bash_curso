@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+clear
+echo "Informações do sistema:"
+echo "-----------------------"
+whoami
+hostname
+uptime -p
+uname -rms

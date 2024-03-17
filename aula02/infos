@@ -1,0 +1,4 @@
+whoami
+hostname
+uptime -p
+uname -rms
