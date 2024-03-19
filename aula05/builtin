@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+# $# mostra nº de argumentos...
+
+# Testa se foi passado um argumento
+
+msg="É preciso informar um único nome de comando válido"
+
+[[ $# -ne 1 ]] && echo $msg && exit 1
+
+echo "o programa sendo executado é(o \$n pega o argumento de número 'n'):"
+echo $0 ",argumento de número 0"
+
+# Executa "help" para verificar se vai conseguir
+# mostrar a ajuda do comando (sucesso) ou não (erro)
+
+# > /dev/null &> -> manda saída pro limbo' sendo erro ou mostrando o manual
+
+help $1 &> /dev/null
+
+# Usar comando "test" para avaliar a expressão...
+
+[[ $? -eq 0 ]] && echo "É builtin" || echo "Ñ é builtin"
+
+exit 0

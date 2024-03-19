@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+echo 'alunos=("Teteco" "Minie" "Balu")'
+
+echo '------------------------------'
+echo 'Pode criar indexando os strings:'
+echo "alunos[0]=Teteco"
+echo "alunos[1]=Minie"
+

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+
+echo "ps u -> mostra os processos"
+echo "cada coisa tem seu PID"
+echo "PID da sessão do Shell do script:  $$"
+echo "echo '\$$' -> mostra o PID da sessão atual"
+
+exit 0

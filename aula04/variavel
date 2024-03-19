@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+echo "Para declarar tipo diferente de string:"
+echo "declare -i -- declara variável do tipo int"
+echo "declare -A -- declara arrays associativas"
+echo "declare -i -- exibe os atributos da variável"
+echo "A lista segue enorme, confira usando o 'declare' no 'help'!"
+echo "Tem var local(apenas na sessão corrente), de ambiente(para todos programas) e especiais(proprio shell define, pode ser local ou de ambiente)"

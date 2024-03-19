@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+echo "Aula 01 - noções básicas"
+echo "------------------------"
+echo "Aula 02 - intro scripts"
+echo "------------------------"
+echo "Aula 03 - primeiro script"
+echo "------------------------"
+echo "Aula 04 - variaveis e mini scripts"
+echo "------------------------"
+echo "Aula 05 - variaveis especiais"

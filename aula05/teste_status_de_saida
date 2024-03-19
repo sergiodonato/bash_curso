@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+echo "test 5 -eq 5 -> testa se 5 é igual a 5"
+echo "0 é ok, diferente de 0 é não ok"
+test $? -eq 0
+echo $?
+test 5 -eq 0
+echo $?
+
+echo "test ou [[ ]]"
+[[ $? -eq 0 ]] && echo "é builtin" || echo "ñ é builtin"
