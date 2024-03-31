@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# -----------------------------------------------
+# Script   :
+# Descrição: testo da aula sobre o comando test
+# Versão   : 1.0
+# Autor    : Sergio Donato <sergiodcdn@gmail.com>
+# Data     : 29/03/2024
+# Licença  : GNU/GPL v3.0
+# -----------------------------------------------
+# Uso      :
+# -----------------------------------------------
+
+Exemplos do comando 'test',
+verificação do número e possíveis comparações,
+usar bem os testes diminui o uso de 'ifs', e são mais rápidos,
+

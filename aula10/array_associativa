@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+# -----------------------------------------------
+# Script   :
+# Descrição: exemplinho de array associativa
+# Versão   : 1.0
+# Autor    : Sergio Donato <sergiodcdn@gmail.com>
+# Data     : 30/03/2024
+# Licença  : GNU/GPL v3.0
+# -----------------------------------------------
+# Uso      :
+# -----------------------------------------------
+
+echo "\
+Exemplo de trabalho com arrays associativas:
+"
+
+declare -A aluno
+declare -A nota
+
+aluno[joao]="João da Sila"
+aluno[jose]="José Pedro"
+aluno[maria]="Maria Antonieta"
+aluno[sofia]="Sofia Nietzche"
+aluno[fatima]="Fátima Bernards"
+aluno[antonio]="Antônio da Paixão"
+
+nota[joao]=10
+nota[jose]=9
+nota[maria]=10
+nota[sofia]=9
+nota[fatima]=8
+nota[antonio]=7
+
+echo "
+Os identificadores (índices) dos alunos são:
+${!aluno[*]}
+
+E os seus nomes são:
+${aluno[*]}
+"
+
+exit 0

@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+# Opções:
+
+editor="nano"
+
+# Variáveis:
+
+dia_de_hoje=$( date +'%d/%m/%Y' )
+
+header="#!/usr/bin/env bash
+# -----------------------------------------------
+# Script   :
+# Descrição:
+# Versão   : 1.0
+# Autor    : Sergio Donato <sergiodcdn@gmail.com>
+# Data     : $dia_de_hoje
+# Licença  : GNU/GPL v3.0
+# -----------------------------------------------
+# Uso      :
+# -----------------------------------------------
+"
+
+# Testar se o usuário passou o n° certo de argumentos (1 argumento):
+
+[[ $# -ne 1 ]] && echo "Passe um único nome de arquivo válido!" && exit 1
+
+
+# Testar se o arquivo já existe:
+
+[[ -f $1 ]] && echo "Este nome já está sendo usado, arquivo não fora criado!" && exit 1
+
+
+# Recebe o nome do novo script e já prepara o corpo:
+
+echo "$header" > $1
+chmod +x $1
+$editor $1
+exit 0

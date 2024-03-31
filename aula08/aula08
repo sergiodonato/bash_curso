@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# -----------------------------------------------
+# Script   : resumo da aula 08
+# Descrição:
+# Versão   : 1.0
+# Autor    : Sergio Donato <sergiodcdn@gmail.com>
+# Data     : 27/03/2024
+# Licença  : GNU/GPL v3.0
+# -----------------------------------------------
+# Uso      :
+# -----------------------------------------------
+
+comandos:
+echo $$ -> mostra o PID
+ps -> mostra oq rola no bash
+echo $PPID -> mostra o processo pai
+checapid -> exec. que mostra pid do bash e da sessão

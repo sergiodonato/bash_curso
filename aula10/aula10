@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+# -----------------------------------------------
+# Script   :
+# Descrição: Variáveis indexadas e associativas ( arrays )
+# Versão   : 1.0
+# Autor    : Sergio Donato <sergiodcdn@gmail.com>
+# Data     : 30/03/2024
+# Licença  : GNU/GPL v3.0
+# -----------------------------------------------
+# Uso      :
+# -----------------------------------------------
+
+variavel comum:
+ - 1 nome corresponde 1 valor.
+ ex: nome"Manuel"; echo $nome -> Manoel
+     echo "${nome}aluno" -> Manoelaluno
+
+array indexada:
+ - fruta[0]="jaca" -> forcaria o indice especifico
+ - fruta=("banana" "laranja" "abacate" "pera")
+            [0]       [1]       [2]      [3]
+ ex: echo $fruta -> banana
+     echo ${fruta[2]} -> abacate
+
+     echo ${#fruta[@]} -> 4, (mostra qntos elementos tem)
+     echo ${#fruta[*]} -> 4, (mostra qntos elementos tem)
+
+     echo ${fruta[@]} -> banana laranja abacate pera
+     echo ${fruta[*]} -> banana laranja abacate pera, (lista os valores)
+
+     echo ${!fruta[@]} -> 0 1 2 3, (lista os indices)
+     echo ${#fruta[@]} -> qntdd de elementos
+
+array associativa (precisam serem declaradas):
+ - declare -A carro, (carro virou uma array associativa)
+   carro[fiat]="147"
+   carro[vw]="Fusca"
+   carro[ford]="Corcel 74"
+
+   echo ${carro[fiat]} -> 147
+   echo ${#carro[@]}  -> 3
+   echo ${carro[@]}  -> Fusca 147 Corcel 74
+   echo ${!carro[@]}  -> vw fiat ford
+
+ - declare -A origem
+   origem[fiat]="Itália"
+   origem[vw]="Alemanha"
+   origem[ford]="EUA"
+
+   echo ${origem[vw]}  -> Alemanha
+
+ - indice=vw
+   echo "${carro[$indice]} - ${origem[indice]}"  ->  Fusca - Alemanha
